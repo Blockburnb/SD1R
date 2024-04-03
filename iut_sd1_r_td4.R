@@ -1,5 +1,5 @@
 getwd()
-setwd("L:/BUT/SD/Promo 2023/fbeck/r")
+setwd("L:/BUT/SD/Promo 2023/fbeck/r/dataset")
 df = read.csv(file = "velov.csv",
               header = TRUE,
               sep = ";", 
