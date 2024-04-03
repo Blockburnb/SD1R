@@ -69,7 +69,7 @@ nlevels(df$SHOOTER)
            print(boxplot(une_colonne, main = nom_colonne))
          }
        
-         else if (as.factor(une_colonne)) {
+         else if (is.factor(une_colonne)) {
            tri = table(une_colonne)
            print(barplot(tri, main = nom_colonne))
          }
@@ -79,4 +79,3 @@ nlevels(df$SHOOTER)
          for (colonne in colnames(df)) {
            build_graph(une_colonne = df[ ,colonne ] , nom_colonne = colonne)
          }
-build_graph(df$SHOT_DIST,"DRIBBLES")
